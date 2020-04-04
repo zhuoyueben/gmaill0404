@@ -22,4 +22,7 @@ public class UserServiceImpl implements UserService {
     public List<Hr> getUser() {
         return userDao.selectAllUser();
     }
+    public List<Hr> getAllUser() {
+        return userDao.selectAll();
+    }
 }

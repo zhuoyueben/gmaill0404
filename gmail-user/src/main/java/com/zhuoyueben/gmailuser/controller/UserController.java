@@ -23,7 +23,7 @@ public class UserController {
     @RequestMapping(value = "/user/list")
     @ResponseBody
     public List<Hr> list(){
-        return userService.getUser();
+        return userService.getAllUser();
 
     }
 }

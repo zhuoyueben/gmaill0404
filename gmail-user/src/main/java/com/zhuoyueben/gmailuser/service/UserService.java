@@ -13,4 +13,8 @@ public interface UserService {
     List<Hr> getUser();
 
     List<Hr> getAllUser();
+
+    Hr getUserById(String id);
+
+    int addUser(Hr hr);
 }

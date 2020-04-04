@@ -25,4 +25,14 @@ public class UserServiceImpl implements UserService {
     public List<Hr> getAllUser() {
         return userDao.selectAll();
     }
+
+    @Override
+    public Hr getUserById(String id) {
+        return userDao.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int addUser(Hr hr) {
+        return userDao.insert(hr);
+    }
 }
